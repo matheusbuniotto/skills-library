@@ -1,6 +1,6 @@
 # Skills Library
 
-A curated collection of reusable `SKILL.md` files for Claude Code.
+A curated collection of reusable agent skills for Claude Code, Codex, and other `skills`-compatible agents.
 
 [![skills.sh](https://skills.sh/b/matheusbuniotto/skills-library)](https://skills.sh/matheusbuniotto/skills-library)
 
@@ -44,9 +44,14 @@ skills-library/
 
 ## Manual use
 
-Copy the relevant `SKILL.md` into your project's `.claude/skills/<skill-name>/SKILL.md`, then invoke it with `/skill-name` in Claude Code.
+If you are not using the CLI, copy the relevant skill folder into the directory your agent expects, such as:
 
-Alternatively, reference the raw GitHub URL directly in your `CLAUDE.md` via `@`.
+```text
+.claude/skills/<skill-name>/
+.agents/skills/<skill-name>/
+```
+
+For Claude Code specifically, you can also reference a raw GitHub URL directly in `CLAUDE.md` via `@`.
 
 ## Contributing
 
