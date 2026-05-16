@@ -1,26 +1,34 @@
-# skills-library
+# Skills Library
 
-A curated collection of `SKILL.md` files for Claude Code — reusable, prompt-ready engineering guides.
+A curated collection of reusable `SKILL.md` files for Claude Code.
+
+## Skills
+
+- [Engineering](skills/engineering/README.md) — architecture, implementation, debugging, and code review skills
+- [Productivity](skills/productivity/README.md) — reusable workflows, documentation, and authoring support
 
 ## Structure
 
-```
+```text
 skills-library/
 ├── README.md
-├── CATALOG.md               # Index of all skills with one-line descriptions
+├── SKILL.md.template
 └── skills/
-    └── <skill-name>/
-        └── SKILL.md         # The skill itself
+    └── <category>/
+        ├── README.md
+        └── <skill-name>/
+            └── SKILL.md
 ```
 
 ## How to use a skill
 
 Copy the relevant `SKILL.md` into your project's `.claude/skills/<skill-name>/SKILL.md`, then invoke it with `/skill-name` in Claude Code.
 
-Alternatively, reference the raw GitHub URL directly in your CLAUDE.md via `@`.
+Alternatively, reference the raw GitHub URL directly in your `CLAUDE.md` via `@`.
 
 ## Contributing
 
-1. Create `skills/<your-skill-name>/SKILL.md` following the template in `SKILL.md.template`
-2. Add a one-line entry to `CATALOG.md`
-3. Open a PR
+1. Choose the category that best fits the skill, or create a new one when the distinction is useful.
+2. Create `skills/<category>/<skill-name>/SKILL.md` from `SKILL.md.template`.
+3. Add the skill to that category's `README.md`.
+4. Open a PR.

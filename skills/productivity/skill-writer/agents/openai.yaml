@@ -1,0 +1,4 @@
+interface:
+  display_name: "Skill Writer"
+  short_description: "Create and improve reusable agent skills."
+  default_prompt: "Use the skill-writer skill to help me create or improve this skill."

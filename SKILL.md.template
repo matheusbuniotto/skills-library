@@ -1,49 +1,68 @@
-# Skill: <Name>
-
-**Trigger**: When to invoke this skill — be specific about user intent or codebase signals.
-
+---
+name: <skill-name>
+description: <What this skill does>. Use when <specific user intents, contexts, file types, or codebase signals should trigger it>.
 ---
 
-## Core Problem This Skill Solves
+# <Skill Name>
 
-One paragraph: what pain does this address, and why does it matter now?
+## Quick Start
 
----
+Give the smallest concrete example that shows the skill in action.
 
-## The Rule Set
+```text
+<minimal working example, command, or expected interaction>
+```
 
-### 1. <First principle>
+## Workflow
 
-Explain the rule. Show the before/after if it involves code structure.
+Break complex work into a short sequence Claude can follow.
 
-### 2. <Second principle>
+1. <First step>
+2. <Second step>
+3. <Third step>
 
-...
+For quality-critical tasks, include a feedback loop:
 
----
+1. Produce the artifact
+2. Verify it against explicit criteria
+3. Revise if needed
 
-## When to Apply This Skill
+## Guidance
 
-| Situation | Action |
-|-----------|--------|
-| ... | ... |
+Write only the information Claude is unlikely to know already:
 
----
+- Prefer one recommended default over many equivalent options.
+- Use concrete examples instead of abstract explanation.
+- Keep terminology consistent across the skill and all references.
+- Avoid time-sensitive facts unless they are intentionally versioned or clearly marked.
 
-## Audit Checklist
+## Resources
 
-- [ ] ...
+Keep `SKILL.md` concise and link detailed material directly from here when needed.
 
----
+- [references/<reference>.md](references/<reference>.md) — <when Claude should read it>
+- [references/<examples>.md](references/<examples>.md) — <when examples are useful>
+- `scripts/<script-name>` — <when deterministic code is safer than regenerated code>
 
-## Anti-Patterns to Flag in Review
+Use bundled resources when:
 
-| Anti-pattern | Why it hurts | Fix |
-|---|---|---|
-| ... | ... | ... |
+- a workflow needs detailed reference material
+- advanced cases are rarely needed
+- the same deterministic code would otherwise be rewritten repeatedly
 
----
+Keep references one level deep from `SKILL.md`; do not hide important details behind chains of links.
 
-## References
+## Review Checklist
 
-- Author — *Title* (Year)
+- [ ] `name` is lowercase, hyphenated, and under 64 characters
+- [ ] `description` is specific, written in third person, and says both what the skill does and when to use it
+- [ ] `description` is under 1024 characters
+- [ ] `SKILL.md` stays concise; move detail into references before it becomes long or mixed-purpose
+- [ ] `SKILL.md` body stays under 500 lines
+- [ ] Complex tasks have a clear workflow with verifiable steps
+- [ ] Examples are concrete rather than abstract
+- [ ] References are linked directly from `SKILL.md`
+- [ ] Terminology is consistent throughout
+- [ ] No stale or time-sensitive guidance is embedded without context
+- [ ] Deterministic or fragile operations use scripts instead of asking Claude to improvise
+- [ ] At least three representative tasks have been tested against the skill before sharing

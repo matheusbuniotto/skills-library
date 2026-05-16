@@ -1,6 +1,9 @@
-# Skill: Simplify AI Architecture
+---
+name: simplify-ai-architecture
+description: Review, refactor, and design AI-assisted codebases to reduce token inflation, context dilution, and unnecessary abstraction. Use when the user asks about architecture for projects where LLMs or Claude Code are primary collaborators, or when a codebase shows over-layering, one-implementation interfaces, mapper chains, or excessive file-touch radius.
+---
 
-**Trigger**: Use when the user asks to review, refactor, or design architecture for a project where AI (LLMs or Claude Code) will be a primary collaborator.
+# Simplify AI Architecture
 
 ---
 
