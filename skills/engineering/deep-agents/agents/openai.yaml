@@ -1,4 +1,0 @@
-interface:
-  display_name: "Deep Agents"
-  short_description: "Build and reason about Deep Agents systems."
-  default_prompt: "Use the Deep Agents skill to help me design or implement this agent system."
