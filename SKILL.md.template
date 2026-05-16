@@ -1,0 +1,49 @@
+# Skill: <Name>
+
+**Trigger**: When to invoke this skill — be specific about user intent or codebase signals.
+
+---
+
+## Core Problem This Skill Solves
+
+One paragraph: what pain does this address, and why does it matter now?
+
+---
+
+## The Rule Set
+
+### 1. <First principle>
+
+Explain the rule. Show the before/after if it involves code structure.
+
+### 2. <Second principle>
+
+...
+
+---
+
+## When to Apply This Skill
+
+| Situation | Action |
+|-----------|--------|
+| ... | ... |
+
+---
+
+## Audit Checklist
+
+- [ ] ...
+
+---
+
+## Anti-Patterns to Flag in Review
+
+| Anti-pattern | Why it hurts | Fix |
+|---|---|---|
+| ... | ... | ... |
+
+---
+
+## References
+
+- Author — *Title* (Year)
