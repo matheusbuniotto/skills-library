@@ -2,6 +2,28 @@
 
 A curated collection of reusable `SKILL.md` files for Claude Code.
 
+[![skills.sh](https://skills.sh/b/matheusbuniotto/skills-library)](https://skills.sh/matheusbuniotto/skills-library)
+
+## Install
+
+Install the whole library:
+
+```bash
+npx skills add matheusbuniotto/skills-library
+```
+
+List the available skills without installing:
+
+```bash
+npx skills add matheusbuniotto/skills-library --list
+```
+
+Install one skill into specific agents:
+
+```bash
+npx skills add matheusbuniotto/skills-library --skill deep-agents --agent claude-code codex
+```
+
 ## Skills
 
 - [Engineering](skills/engineering/README.md) — architecture, implementation, debugging, and code review skills
@@ -20,7 +42,7 @@ skills-library/
             └── SKILL.md
 ```
 
-## How to use a skill
+## Manual use
 
 Copy the relevant `SKILL.md` into your project's `.claude/skills/<skill-name>/SKILL.md`, then invoke it with `/skill-name` in Claude Code.
 
