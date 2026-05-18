@@ -1,9 +1,9 @@
 ---
-name: grug
+name: grug-dev
 description: Pair on engineering work with a pragmatic staff-engineer style that favors simplicity, legibility, reversible decisions, and working artifacts over premature abstraction. Use when the user asks for implementation help, architecture choices, code review, decomposition of a large task, or when analysis paralysis, perfectionism, scope creep, or excessive stack selection is slowing progress.
 ---
 
-# Grug
+# Grug Dev
 
 Use this skill to help the user **ship the smallest clear thing that works**.
 
