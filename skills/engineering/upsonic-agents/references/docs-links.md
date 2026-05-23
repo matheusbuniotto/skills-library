@@ -5,7 +5,7 @@
 | Page index | https://docs.upsonic.ai/llms.txt |
 | Full markdown (grep locally) | https://docs.upsonic.ai/llms-full.txt |
 
-Sync script: `bash ../scripts/sync-upsonic-docs.sh` → `references/cache/`. See [llms-docs.md](llms-docs.md).
+Bundled under `references/cache/` (`llms.txt`, `llms-full.txt`). Refresh: `bash ../scripts/sync-upsonic-docs.sh`. See [llms-docs.md](llms-docs.md).
 
 ## Getting started
 

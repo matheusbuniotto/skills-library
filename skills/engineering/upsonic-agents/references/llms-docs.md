@@ -8,20 +8,22 @@ Upsonic publishes machine-readable docs for IDEs and agents. Use them **before g
 | **llms-full.txt** | https://docs.upsonic.ai/llms-full.txt | ~2.2 MB | Full markdown dump of all pages; grep locally for APIs, examples, params |
 | **Live site** | https://docs.upsonic.ai/get-started/introduction | — | Human reading; IDE can add llms-full URL per [IDE integration](https://docs.upsonic.ai/get-started/ide-integration) |
 
-## Local cache (recommended)
+## Local cache (bundled in this skill)
 
-From the skill directory:
+This repo ships:
+
+- `references/cache/llms.txt` (~60 KB)
+- `references/cache/llms-full.txt` (~2.2 MB)
+
+Grep them directly — no download required.
+
+**Refresh** after Upsonic releases (from the skill folder):
 
 ```bash
 bash scripts/sync-upsonic-docs.sh
 ```
 
-Writes:
-
-- `references/cache/llms.txt`
-- `references/cache/llms-full.txt`
-
-Re-run after Upsonic releases or when docs feel stale.
+Then commit updated cache files if you maintain the skills library.
 
 ## How agents should use llms-full.txt
 

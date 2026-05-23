@@ -1,0 +1,423 @@
+# Upsonic AI
+
+## Docs
+
+- [Initialization](https://docs.upsonic.ai/CLI/initialization.md): Set up your development environment and initialize an Agent Project
+- [Overview](https://docs.upsonic.ai/CLI/overview.md): Learn about Agent Projects and how they work in Upsonic
+- [Start Agent API](https://docs.upsonic.ai/CLI/start-agent-api.md): Configure inputs, outputs, and run your agent as a FastAPI server
+- [Changelog](https://docs.upsonic.ai/changelog.md): Latest updates and improvements to Upsonic AI Agent Framework
+- [Community](https://docs.upsonic.ai/community.md): Join the Upsonic community, contribute, share ideas, and build together
+- [Accessing Agent Output](https://docs.upsonic.ai/concepts/agents/access_output.md): Working with AgentRunOutput for complete execution results
+- [Adding Tools](https://docs.upsonic.ai/concepts/agents/adding-tools.md): Managing tools for agents in the Upsonic framework
+- [Adding a Memory](https://docs.upsonic.ai/concepts/agents/advanced/adding-a-memory.md): Set up memory management for your agents with comprehensive context storage
+- [Adding Reasoning](https://docs.upsonic.ai/concepts/agents/advanced/adding-reasoning.md): Enable advanced reasoning for complex multi-tool analysis with step-by-step evaluation
+- [Adding Thinking](https://docs.upsonic.ai/concepts/agents/advanced/adding-thinking.md): Enable thinking capabilities for structured multi-tool orchestration
+- [Expose Agent as MCP Server](https://docs.upsonic.ai/concepts/agents/advanced/agent-as-mcp.md): Turn any Agent into an MCP server so other agents or MCP clients can use it as a tool
+- [Automatic Model Selection](https://docs.upsonic.ai/concepts/agents/advanced/automatic-model-selection.md): Intelligent model recommendation system for optimal task performance
+- [Company Knowledge](https://docs.upsonic.ai/concepts/agents/advanced/company-knowledge.md): Branding and organizational context for your agents
+- [Context Compression](https://docs.upsonic.ai/concepts/agents/advanced/context-compression.md): Automatic context window management for long-running agent conversations
+- [Reflection](https://docs.upsonic.ai/concepts/agents/advanced/reflection.md): Enable self-critique and improvement for agent responses
+- [Reliability & Retries](https://docs.upsonic.ai/concepts/agents/advanced/reliability-and-retries.md): Configure error handling and retry logic for robust agents
+- [Workspace Configuration](https://docs.upsonic.ai/concepts/agents/advanced/workspace.md): Configure agents with workspace folders containing agent configuration files
+- [Attributes](https://docs.upsonic.ai/concepts/agents/attributes.md): Configuration options for the Agent system
+- [Clanker](https://docs.upsonic.ai/concepts/agents/clanker.md): Yeah, we actually did this.
+- [Basic Agent Example](https://docs.upsonic.ai/concepts/agents/creating-an-agent.md): Learn how to build Agents with Upsonic
+- [Debugging Agents](https://docs.upsonic.ai/concepts/agents/debugging-agents.md): Debug and troubleshoot agent execution
+- [Image Generation](https://docs.upsonic.ai/concepts/agents/image-generation-agent.md): Generating and managing images with Agent class
+- [Agent Metrics](https://docs.upsonic.ai/concepts/agents/metrics.md): Track tokens, cost, requests, tool calls, and timing across every model call this agent participates in.
+- [Agents](https://docs.upsonic.ai/concepts/agents/overview.md): Let's analyze how Upsonic Agents works
+- [Agent printing](https://docs.upsonic.ai/concepts/agents/printing.md): Learn how to control your Agent's printing
+- [Running Agents](https://docs.upsonic.ai/concepts/agents/running-agents.md): Execute agents with different methods
+- [Filesystem Tools](https://docs.upsonic.ai/concepts/autonomous-agent/advanced/filesystem-tools.md): File operations available in AutonomousAgent
+- [Memory Integration](https://docs.upsonic.ai/concepts/autonomous-agent/advanced/memory-integration.md): Session persistence and memory in AutonomousAgent
+- [Shell Tools](https://docs.upsonic.ai/concepts/autonomous-agent/advanced/shell-tools.md): Terminal command execution in AutonomousAgent
+- [Workspace Security](https://docs.upsonic.ai/concepts/autonomous-agent/advanced/workspace-security.md): Sandboxing and security features in AutonomousAgent
+- [AGENTS.md](https://docs.upsonic.ai/concepts/autonomous-agent/agents-md.md): Configure AutonomousAgent behavior using an AGENTS.md file in the workspace
+- [Attributes](https://docs.upsonic.ai/concepts/autonomous-agent/attributes.md): Configuration options for the AutonomousAgent
+- [Creating an Autonomous Agent](https://docs.upsonic.ai/concepts/autonomous-agent/creating-an-autonomous-agent.md): Learn how to build Autonomous Agents with Upsonic
+- [Basic Autonomous Agent Example](https://docs.upsonic.ai/concepts/autonomous-agent/examples/basic-autonomous-agent-example.md): A quick example to get started with AutonomousAgent
+- [Autonomous Agent](https://docs.upsonic.ai/concepts/autonomous-agent/overview.md): Pre-configured agent with filesystem and shell capabilities
+- [Running an Autonomous Agent](https://docs.upsonic.ai/concepts/autonomous-agent/running-an-autonomous-agent.md): Execute autonomous agents with different methods
+- [Canvas](https://docs.upsonic.ai/concepts/canvas.md): Create and manage persistent text documents with AI-powered editing
+- [Context Manager](https://docs.upsonic.ai/concepts/chat/advanced/context-manager.md): Using Chat as an async context manager
+- [Error Handling](https://docs.upsonic.ai/concepts/chat/advanced/error-handling.md): Retry mechanisms and error recovery
+- [Memory Strategies](https://docs.upsonic.ai/concepts/chat/advanced/memory-strategies.md): Advanced memory configuration
+- [Attributes](https://docs.upsonic.ai/concepts/chat/attributes.md): Configuration options for the Chat class
+- [Creating a Chat](https://docs.upsonic.ai/concepts/chat/creating-a-chat.md): How to initialize and configure a Chat session
+- [Basic Example](https://docs.upsonic.ai/concepts/chat/examples/basic.md): Simple chat session example
+- [Multi-Session](https://docs.upsonic.ai/concepts/chat/examples/multi-session.md): Multiple sessions with shared user memory
+- [Persistent Storage](https://docs.upsonic.ai/concepts/chat/examples/persistent-storage.md): Chat with database persistence
+- [User Profile](https://docs.upsonic.ai/concepts/chat/examples/user-profile.md): Custom user profile schemas
+- [History Management](https://docs.upsonic.ai/concepts/chat/history-management.md): Message and attachment manipulation
+- [Chat Metrics](https://docs.upsonic.ai/concepts/chat/metrics.md): Track tokens, cost, requests, tool calls, and timing across an entire chat session.
+- [Chat](https://docs.upsonic.ai/concepts/chat/overview.md): Build stateful conversational sessions with memory and metrics
+- [Running a Chat](https://docs.upsonic.ai/concepts/chat/running-a-chat.md): How to send messages and stream responses
+- [Storage Backends](https://docs.upsonic.ai/concepts/chat/storage-backends.md): Persistence options for Chat sessions
+- [Culture](https://docs.upsonic.ai/concepts/culture/overview.md): Define agent behavior and communication guidelines that persist throughout conversations
+- [Debugging](https://docs.upsonic.ai/concepts/debugging.md): Debug your Upsonic Agents and Direct
+- [Advanced](https://docs.upsonic.ai/concepts/deep-agent/advanced.md): Performance optimization and advanced configuration for Deep Agent
+- [Attributes](https://docs.upsonic.ai/concepts/deep-agent/attributes.md): Configuration options for the DeepAgent system
+- [Storage Backends](https://docs.upsonic.ai/concepts/deep-agent/capabilities/backends.md): Configure filesystem storage with different backends
+- [Planning](https://docs.upsonic.ai/concepts/deep-agent/capabilities/planning.md): Create and manage structured task lists for complex work
+- [Subagent Generation](https://docs.upsonic.ai/concepts/deep-agent/capabilities/subagent-generation.md): Spawn specialized agents for complex, independent tasks
+- [To-Do Management](https://docs.upsonic.ai/concepts/deep-agent/capabilities/to-do-management.md): Automatic todo tracking and completion enforcement
+- [Virtual File System](https://docs.upsonic.ai/concepts/deep-agent/capabilities/virtual-file-system.md): Isolated filesystem for file operations during task execution
+- [Basic Deep Agent Example](https://docs.upsonic.ai/concepts/deep-agent/examples/basic-deep-agent-example.md): Simple example demonstrating core capabilities
+- [Content Creation Agent](https://docs.upsonic.ai/concepts/deep-agent/examples/content-creation-agent.md): Content creation workflow with specialized subagents
+- [Research and Analysis Agent](https://docs.upsonic.ai/concepts/deep-agent/examples/research-and-analysis-agent.md): Research workflow with specialized subagents
+- [Software Developer Agent](https://docs.upsonic.ai/concepts/deep-agent/examples/software-developer-agent.md): Software development workflow with specialized subagents
+- [Deep Agent](https://docs.upsonic.ai/concepts/deep-agent/overview.md): Give your agents advanced capabilities for complex, multi-step tasks
+- [Attributes](https://docs.upsonic.ai/concepts/direct-llm-call/attributes.md): Configuration options for Direct LLM Call
+- [Basic Direct LLM Call Example](https://docs.upsonic.ai/concepts/direct-llm-call/examples/basic-direct-llm-call-example.md): Extract structured information from a business document
+- [Image Processing](https://docs.upsonic.ai/concepts/direct-llm-call/image-processing.md): Processing and managing images with Direct class in the Upsonic framework
+- [Direct](https://docs.upsonic.ai/concepts/direct-llm-call/overview.md): High-speed, streamlined interface for direct LLM interactions without memory or tool complexity
+- [Evals](https://docs.upsonic.ai/concepts/evals/overview.md): Measure accuracy, performance, and reliability of your AI agents, teams, and graphs
+- [Accuracy Evaluation with Agent](https://docs.upsonic.ai/concepts/evals/usage/accuracy/agent.md): Evaluate a single agent's output accuracy using LLM-as-a-judge
+- [Accuracy Evaluation with Graph](https://docs.upsonic.ai/concepts/evals/usage/accuracy/graph.md): Evaluate a graph workflow's output accuracy using LLM-as-a-judge
+- [Accuracy Evaluation](https://docs.upsonic.ai/concepts/evals/usage/accuracy/introduction.md): Score agent output quality using the LLM-as-a-judge pattern
+- [Accuracy Evaluation with Team](https://docs.upsonic.ai/concepts/evals/usage/accuracy/team.md): Evaluate a multi-agent team's output accuracy using LLM-as-a-judge
+- [Performance Evaluation with Agent](https://docs.upsonic.ai/concepts/evals/usage/performance/agent.md): Profile a single agent's latency and memory usage
+- [Performance Evaluation with Graph](https://docs.upsonic.ai/concepts/evals/usage/performance/graph.md): Profile a graph workflow's latency and memory usage
+- [Performance Evaluation](https://docs.upsonic.ai/concepts/evals/usage/performance/introduction.md): Profile latency and memory usage of agents, teams, and graphs
+- [Performance Evaluation with Team](https://docs.upsonic.ai/concepts/evals/usage/performance/team.md): Profile a multi-agent team's latency and memory usage
+- [Reliability Evaluation with Agent](https://docs.upsonic.ai/concepts/evals/usage/reliability/agent.md): Verify that an agent called the expected tools during execution
+- [Reliability Evaluation with Graph](https://docs.upsonic.ai/concepts/evals/usage/reliability/graph.md): Verify tool calls across a graph workflow execution
+- [Reliability Evaluation](https://docs.upsonic.ai/concepts/evals/usage/reliability/introduction.md): Verify that expected tools were called during agent execution
+- [Reliability Evaluation with Team](https://docs.upsonic.ai/concepts/evals/usage/reliability/team.md): Verify tool calls across a multi-agent team execution
+- [Graph](https://docs.upsonic.ai/concepts/graph.md): Generate Upsonic Agent and Direct Graphs
+- [Cancel Run](https://docs.upsonic.ai/concepts/hitl/cancel-run.md): Cancel running agent executions and resume from the cut-off point
+- [Durable Execution](https://docs.upsonic.ai/concepts/hitl/durable-execution.md): Automatic recovery from errors with state persistence across restarts
+- [Dynamic User Input](https://docs.upsonic.ai/concepts/hitl/dynamic-user-input.md): Let the agent request user-provided fields at runtime via get_user_input
+- [External Tool Execution](https://docs.upsonic.ai/concepts/hitl/external-tool-execution.md): Pause agents for external tool processing and resume with results
+- [Human-in-the-Loop (HITL)](https://docs.upsonic.ai/concepts/hitl/overview.md): Control, pause, and resume agent executions with human oversight
+- [User Confirmation](https://docs.upsonic.ai/concepts/hitl/user-confirmation.md): Pause agents for user approval or rejection of tool calls, then resume
+- [User Input](https://docs.upsonic.ai/concepts/hitl/user-input.md): Pause agents for user-provided field values, then resume with filled inputs
+- [Interfaces](https://docs.upsonic.ai/concepts/interfaces/Overview.md): Expose Upsonic agents through various communication protocols and platforms
+- [Gmail](https://docs.upsonic.ai/concepts/interfaces/gmail.md): Host agents as Gmail email assistants
+- [Mail (SMTP/IMAP)](https://docs.upsonic.ai/concepts/interfaces/mail.md): Host agents as email assistants using any mail provider
+- [Slack](https://docs.upsonic.ai/concepts/interfaces/slack.md): Host agents as Slack applications
+- [Telegram](https://docs.upsonic.ai/concepts/interfaces/telegram.md): Host agents as Telegram bots with webhooks, multi-media, and chat or task modes
+- [Telegram Advanced](https://docs.upsonic.ai/concepts/interfaces/telegram-advanced.md): TelegramInterface parameters, endpoints, and API reference
+- [WhatsApp](https://docs.upsonic.ai/concepts/interfaces/whatsapp.md): Host agents as WhatsApp applications
+- [Intelligent Auto-Detection](https://docs.upsonic.ai/concepts/knowledgebase/advanced/auto-detection.md): Automatic loader and splitter selection based on file type and content
+- [Direct Content](https://docs.upsonic.ai/concepts/knowledgebase/advanced/direct-content.md): Ingest raw text strings without files and mix with file sources
+- [Document Management](https://docs.upsonic.ai/concepts/knowledgebase/advanced/document-management.md): Add, remove, refresh, and update documents dynamically
+- [Indexed Processing](https://docs.upsonic.ai/concepts/knowledgebase/advanced/indexed-processing.md): Use different loaders and splitters for each source file
+- [Isolated Search](https://docs.upsonic.ai/concepts/knowledgebase/advanced/isolate-search.md): Scope search results to a single KnowledgeBase when multiple KBs share one collection
+- [Advanced Features](https://docs.upsonic.ai/concepts/knowledgebase/advanced/overview.md): Advanced KnowledgeBase capabilities for production RAG systems
+- [Storage Persistence](https://docs.upsonic.ai/concepts/knowledgebase/advanced/storage-persistence.md): Persist knowledge base document metadata to a storage backend
+- [Vector Search Tuning](https://docs.upsonic.ai/concepts/knowledgebase/advanced/vector-search-params.md): Fine-tune retrieval with per-Task vector search parameters
+- [Attributes](https://docs.upsonic.ai/concepts/knowledgebase/attributes.md): Configuration options for the KnowledgeBase
+- [Getting Started](https://docs.upsonic.ai/concepts/knowledgebase/basic-rag-example.md): Build your first RAG system with KnowledgeBase in 5 minutes
+- [CSV Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/csv.md): Load CSV files with flexible row handling and content synthesis
+- [Docling Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/docling.md): Enterprise-grade document processing with advanced ML models
+- [DOCX Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/docx.md): Load Microsoft Word documents with table and formatting support
+- [HTML Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/html.md): Load HTML files and web URLs with structured content extraction
+- [JSON Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/json.md): Load JSON and JSONL files with flexible record extraction
+- [Markdown Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/markdown.md): Load Markdown files with front matter and code block support
+- [PdfPlumber Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/pdfplumber.md): Load PDF documents using pdfplumber for superior table extraction
+- [PyMuPDF Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/pymupdf.md): Load PDF documents using PyMuPDF for high performance
+- [PyPDF Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/pypdf.md): Load PDF documents using pypdf library
+- [Text Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/text.md): Load plain text files with flexible processing options
+- [XML Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/xml.md): Load XML files with XPath-based splitting and content extraction
+- [YAML Loader](https://docs.upsonic.ai/concepts/knowledgebase/document-loaders/yml.md): Load YAML files with jq-based query system for flexible extraction
+- [Azure OpenAI Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/azure.md): Using Azure OpenAI embedding models with Upsonic
+- [AWS Bedrock Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/bedrock.md): Using AWS Bedrock embedding models with Upsonic
+- [FastEmbed Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/fastembed.md): Using FastEmbed local embedding models with Upsonic
+- [Google Gemini Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/google.md): Using Google Gemini embedding models with Upsonic
+- [HuggingFace Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/huggingface.md): Using HuggingFace embedding models with Upsonic
+- [Ollama Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/ollama.md): Using Ollama local embedding models with Upsonic
+- [OpenAI Embeddings](https://docs.upsonic.ai/concepts/knowledgebase/embedding-providers/openai.md): Using OpenAI embedding models with Upsonic
+- [Examples](https://docs.upsonic.ai/concepts/knowledgebase/examples.md): Practical examples using KnowledgeBase with Agent and Task
+- [KnowledgeBase](https://docs.upsonic.ai/concepts/knowledgebase/overview.md): Build intelligent RAG systems with vector databases
+- [Putting Files](https://docs.upsonic.ai/concepts/knowledgebase/putting-files.md): How to add documents to your KnowledgeBase
+- [Query Control](https://docs.upsonic.ai/concepts/knowledgebase/query-control.md): Control whether KnowledgeBase context is injected into the agent via query_knowledge_base
+- [Agentic Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/agentic.md): Split documents using AI agents for cognitive processing
+- [Character Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/character.md): Split text based on a single character separator
+- [HTML Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/html.md): Split HTML documents using structure-aware semantic segmentation
+- [JSON Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/json.md): Split JSON documents using structure-aware recursive traversal
+- [Markdown Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/markdown.md): Split Markdown documents using syntax-aware structural boundaries
+- [Python Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/python.md): Split Python code using AST-powered semantic boundaries
+- [Recursive Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/recursive.md): Split text recursively using prioritized separators to preserve semantic boundaries
+- [Semantic Splitter](https://docs.upsonic.ai/concepts/knowledgebase/text-splitters/semantic.md): Split text based on semantic topic shifts using embeddings
+- [Using as Tool](https://docs.upsonic.ai/concepts/knowledgebase/using-as-tool.md): Use KnowledgeBase as a tool in Agent or Task
+- [Chroma](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/chroma.md): Using ChromaDB as a vector database provider
+- [FAISS](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/faiss.md): Using FAISS as a vector database provider
+- [Milvus](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/milvus.md): Using Milvus as a vector database provider
+- [Vector Stores](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/overview.md): Choose and configure the right vector database for your KnowledgeBase
+- [PGVector](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/pgvector.md): Using PostgreSQL with pgvector extension as a vector database provider
+- [Pinecone](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/pinecone.md): Using Pinecone as a vector database provider
+- [Qdrant](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/qdrant.md): Using Qdrant as a vector database provider
+- [SuperMemory](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/supermemory.md): Using SuperMemory as a vector database provider
+- [Weaviate](https://docs.upsonic.ai/concepts/knowledgebase/vector-stores/weaviate.md): Using Weaviate as a vector database provider
+- [Compatibility Overview](https://docs.upsonic.ai/concepts/llm-support/compatibility-overview.md): Comprehensive feature support and comparison tables across model providers
+- [Error Handling](https://docs.upsonic.ai/concepts/llm-support/error-handling.md): Comprehensive error handling for LLM operations in Upsonic
+- [LLM](https://docs.upsonic.ai/concepts/llm-support/llm-overview.md): Understanding LLM models and error handling in Upsonic
+- [Model as String](https://docs.upsonic.ai/concepts/llm-support/model-as-string.md): Using string-based model identifiers for simplified configuration
+- [OpenAI-Like Models](https://docs.upsonic.ai/concepts/llm-support/openai-compatible.md): Using models that implement the OpenAI API specification
+- [Anthropic](https://docs.upsonic.ai/concepts/llm-support/providers/anthropic.md): Using Anthropic Claude models with Upsonic
+- [Azure OpenAI](https://docs.upsonic.ai/concepts/llm-support/providers/azure.md): Using Azure OpenAI Service with Upsonic
+- [AWS Bedrock](https://docs.upsonic.ai/concepts/llm-support/providers/bedrock.md): Using AWS Bedrock with Upsonic
+- [Cerebras](https://docs.upsonic.ai/concepts/llm-support/providers/cerebras.md): Using Cerebras API for fast inference with Upsonic
+- [Cohere](https://docs.upsonic.ai/concepts/llm-support/providers/cohere.md): Using Cohere models with Upsonic
+- [GitHub Models](https://docs.upsonic.ai/concepts/llm-support/providers/github.md): Using GitHub Models API with Upsonic
+- [Google (Gemini)](https://docs.upsonic.ai/concepts/llm-support/providers/google.md): Using Google Gemini models with Upsonic
+- [Grok](https://docs.upsonic.ai/concepts/llm-support/providers/grok.md): Using xAI Grok models with Upsonic
+- [Groq](https://docs.upsonic.ai/concepts/llm-support/providers/groq.md): Using Groq for ultra-fast LLM inference with Upsonic
+- [Heroku](https://docs.upsonic.ai/concepts/llm-support/providers/heroku.md): Using Heroku Inference API with Upsonic
+- [Huggingface](https://docs.upsonic.ai/concepts/llm-support/providers/huggingface.md): Using Huggingface models with Upsonic
+- [LiteLLM](https://docs.upsonic.ai/concepts/llm-support/providers/litellm.md): Using LiteLLM proxy for unified LLM access with Upsonic
+- [LM Studio](https://docs.upsonic.ai/concepts/llm-support/providers/lmstudio.md): Using LM Studio for local model deployment with Upsonic
+- [Mistral](https://docs.upsonic.ai/concepts/llm-support/providers/mistral.md): Using Mistral AI models with Upsonic
+- [Moonshot AI](https://docs.upsonic.ai/concepts/llm-support/providers/moonshotai.md): Using Moonshot AI (Kimi) with Upsonic
+- [NVIDIA NIM](https://docs.upsonic.ai/concepts/llm-support/providers/nvidia.md): Using NVIDIA NIM for cloud-based LLM inference with Upsonic
+- [Ollama](https://docs.upsonic.ai/concepts/llm-support/providers/ollama.md): Using Ollama for local model deployment with Upsonic
+- [OpenAI Chat](https://docs.upsonic.ai/concepts/llm-support/providers/openai-chat.md): Using OpenAI Chat Completions API with Upsonic
+- [OpenAI Responses](https://docs.upsonic.ai/concepts/llm-support/providers/openai-responses.md): Using OpenAI Responses API with Upsonic
+- [OpenRouter](https://docs.upsonic.ai/concepts/llm-support/providers/openrouter.md): Using OpenRouter for unified access to multiple LLM providers with Upsonic
+- [Outlines](https://docs.upsonic.ai/concepts/llm-support/providers/outlines.md): Using Outlines library for local and non-API models with Upsonic
+- [OVHcloud](https://docs.upsonic.ai/concepts/llm-support/providers/ovhcloud.md): Using OVHcloud AI Endpoints with Upsonic
+- [SambaNova](https://docs.upsonic.ai/concepts/llm-support/providers/sambanova.md): Using SambaNova AI for open and hosted models with Upsonic
+- [Together](https://docs.upsonic.ai/concepts/llm-support/providers/together.md): Using Together AI for open and hosted models with Upsonic
+- [Vercel](https://docs.upsonic.ai/concepts/llm-support/providers/vercel.md): Using Vercel AI Gateway for unified LLM access with Upsonic
+- [vLLM](https://docs.upsonic.ai/concepts/llm-support/providers/vllm.md): Using vLLM for local high-throughput LLM serving with Upsonic
+- [xAI](https://docs.upsonic.ai/concepts/llm-support/providers/xai.md): Using xAI native SDK for Grok and other xAI models with Upsonic
+- [Attributes](https://docs.upsonic.ai/concepts/memory/attributes.md): Configuration options for the Memory class
+- [Choosing Right Memory Types](https://docs.upsonic.ai/concepts/memory/choosing-right-memory-types.md): Select the appropriate memory types for your use case
+- [Basic Memory Example](https://docs.upsonic.ai/concepts/memory/examples/basic-memory-example.md): Complete example of using memory in a customer support agent
+- [Conversation Memory](https://docs.upsonic.ai/concepts/memory/memory-types/conversation-memory.md): Store complete chat history for maintaining context
+- [User Analysis Memory](https://docs.upsonic.ai/concepts/memory/memory-types/focus-memory.md): Learn about users and build comprehensive profiles
+- [Summary Memory](https://docs.upsonic.ai/concepts/memory/memory-types/summary-memory.md): Maintain evolving conversation summaries for cost efficiency
+- [Memory](https://docs.upsonic.ai/concepts/memory/overview.md): Give your agents persistent memory - remember conversations and learn about users
+- [AsyncMem0Storage](https://docs.upsonic.ai/concepts/memory/storage/async-mem0.md): Async Mem0 Platform and Open Source integration
+- [AsyncMongoStorage](https://docs.upsonic.ai/concepts/memory/storage/async-mongo.md): Async MongoDB storage for document-based scalable systems
+- [AsyncPostgresStorage](https://docs.upsonic.ai/concepts/memory/storage/async-postgres.md): Async PostgreSQL storage for production systems
+- [AsyncSqliteStorage](https://docs.upsonic.ai/concepts/memory/storage/async-sqlite.md): Async SQLite database storage for local development
+- [InMemoryStorage](https://docs.upsonic.ai/concepts/memory/storage/inmemory.md): Fast in-memory storage for development and testing
+- [JSONStorage](https://docs.upsonic.ai/concepts/memory/storage/json.md): File-based JSON storage for simple persistence
+- [Mem0Storage](https://docs.upsonic.ai/concepts/memory/storage/mem0.md): Mem0 Platform and Open Source integration
+- [MongoStorage](https://docs.upsonic.ai/concepts/memory/storage/mongo.md): MongoDB storage for document-based scalable systems
+- [PostgresStorage](https://docs.upsonic.ai/concepts/memory/storage/postgres.md): PostgreSQL storage for production systems
+- [RedisStorage](https://docs.upsonic.ai/concepts/memory/storage/redis.md): Redis storage for distributed and high-performance systems
+- [SqliteStorage](https://docs.upsonic.ai/concepts/memory/storage/sqlite.md): Lightweight SQLite database storage for local development
+- [Storage Tables](https://docs.upsonic.ai/concepts/memory/storage/storage-tables.md): What data is stored in the session, user memory, and knowledge tables
+- [Advanced Features](https://docs.upsonic.ai/concepts/ocr/advanced-features.md): Advanced OCR capabilities and specialized features
+- [Architecture](https://docs.upsonic.ai/concepts/ocr/architecture.md): Understanding the layered OCR pipeline architecture
+- [Attributes](https://docs.upsonic.ai/concepts/ocr/attributes.md): Configuration options for the OCR system
+- [Create an OCR](https://docs.upsonic.ai/concepts/ocr/create-an-ocr.md): How to create an OCR instance with engine configuration
+- [DeepSeek OCR (VLLM)](https://docs.upsonic.ai/concepts/ocr/engines/deepseek-ocr.md): Advanced OCR with batch processing for multi-page PDFs
+- [DeepSeek OCR (Ollama)](https://docs.upsonic.ai/concepts/ocr/engines/deepseek-ocr-ollama.md): Simple and easy-to-use OCR powered by Ollama and DeepSeek model
+- [EasyOCR](https://docs.upsonic.ai/concepts/ocr/engines/easyocr.md): Ready-to-use OCR with 80+ supported languages using deep learning models
+- [PaddleOCR](https://docs.upsonic.ai/concepts/ocr/engines/paddleocr.md): Comprehensive OCR with multiple specialized pipelines for advanced document understanding
+- [RapidOCR](https://docs.upsonic.ai/concepts/ocr/engines/rapidocr.md): Lightweight OCR based on ONNX Runtime for fast inference
+- [Tesseract](https://docs.upsonic.ai/concepts/ocr/engines/tesseract.md): Google's open-source OCR engine with 100+ language support
+- [Basic OCR Example](https://docs.upsonic.ai/concepts/ocr/examples/basic-ocr-example.md): Complete document processing pipeline with OCR
+- [Exception Handling](https://docs.upsonic.ai/concepts/ocr/exception-handling.md): OCR exception classes, error codes, and catch patterns
+- [Metrics and Performance](https://docs.upsonic.ai/concepts/ocr/metrics-and-performance.md): Track and analyze OCR performance
+- [OCR](https://docs.upsonic.ai/concepts/ocr/overview.md): Extract text from images and PDFs with multiple OCR provider support
+- [Running an OCR](https://docs.upsonic.ai/concepts/ocr/running-an-ocr.md): Extract text from documents using sync and async methods
+- [Timeout](https://docs.upsonic.ai/concepts/ocr/timeout.md): Configure and handle Layer 1 timeout for OCR processing
+- [Applied Scientist](https://docs.upsonic.ai/concepts/prebuilt-autonomous-agents/applied-scientist.md): Autonomous agent that benchmarks a new method against your existing Jupyter notebook — from a paper, repo, Kaggle link, or a free-form idea.
+- [Prebuilt Autonomous Agents](https://docs.upsonic.ai/concepts/prebuilt-autonomous-agents/overview.md): Community-built autonomous agents ready to use out of the box
+- [Creating Action](https://docs.upsonic.ai/concepts/safety-engine/custom-policy/creating-action.md): Build custom content handling actions
+- [Creating Policy](https://docs.upsonic.ai/concepts/safety-engine/custom-policy/creating-policy.md): Combine rules and actions into complete policies
+- [Creating Rule](https://docs.upsonic.ai/concepts/safety-engine/custom-policy/creating-rule.md): Build custom content detection rules
+- [Safety Engine](https://docs.upsonic.ai/concepts/safety-engine/overview.md): Content safety and policy enforcement for AI agents
+- [Policy Feedback Loop](https://docs.upsonic.ai/concepts/safety-engine/policy-feedback-loop.md): LLM-driven feedback for policy violations with retry capabilities
+- [Policy Points](https://docs.upsonic.ai/concepts/safety-engine/policy-points.md): Where and when safety policies are applied in your agent
+- [Adult Content Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/adult-content-policies.md): Detect explicit sexual content and adult themes
+- [Cryptocurrency Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/cryptocurrency-policies.md): Detect and handle crypto-related content
+- [Cybersecurity Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/cybersecurity-policies.md): Detect vulnerabilities, exploits, and cyber threats
+- [Financial Information Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/financial-information-policies.md): Protect credit cards, bank accounts, and financial data
+- [Fraud Detection Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/fraud-detection-policies.md): Identify scams and fraudulent activities
+- [Insider Threat Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/insider-threat-policies.md): Detect data exfiltration and unauthorized access
+- [Legal Information Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/legal-information-policies.md): Protect case numbers and attorney-client privileged information
+- [Medical Information Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/medical-information-policies.md): Protect health records and PHI for HIPAA compliance
+- [Phishing Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/phishing-policies.md): Detect suspicious links and social engineering
+- [Phone Number Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/phone-number-policies.md): Detect and anonymize phone numbers
+- [PII Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/pii-policies.md): Detect and protect personal identifiable information
+- [Profanity Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/profanity-policies.md): Detect profanity and toxic content using ML models
+- [Sensitive Social Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/sensitive-social-policies.md): Detect racism, hate speech, and discriminatory language
+- [Technical Security Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/technical-security-policies.md): Protect API keys, passwords, and security credentials
+- [Tool Safety Policies](https://docs.upsonic.ai/concepts/safety-engine/usage/prebuilt-policies/tool-safety-policies.md): Detect harmful tools and malicious tool calls
+- [Simulation](https://docs.upsonic.ai/concepts/simulation/overview.md): Run LLM-powered time-series simulations for forecasting and scenario analysis
+- [Merchant Revenue Forecast](https://docs.upsonic.ai/concepts/simulation/scenarios/merchant_revenue_forecast.md): Forecast e-commerce merchant revenue with AI-powered time-series simulation
+- [Auto-Selection](https://docs.upsonic.ai/concepts/skills/advanced/auto-selection.md): Automatically select the most relevant skills for each task using embeddings
+- [Caching](https://docs.upsonic.ai/concepts/skills/advanced/caching.md): Cache skill content in memory to reduce repeated file reads
+- [Callbacks](https://docs.upsonic.ai/concepts/skills/advanced/callbacks.md): Hook into skill usage events for logging and monitoring
+- [Dependencies](https://docs.upsonic.ai/concepts/skills/advanced/dependencies.md): Declare and validate inter-skill dependencies
+- [Advanced Features](https://docs.upsonic.ai/concepts/skills/advanced/overview.md): Caching, auto-selection, dependencies, callbacks, safety policies, and more
+- [Safety Policies](https://docs.upsonic.ai/concepts/skills/advanced/safety.md): Filter skill content with Upsonic's built-in safety policies
+- [Versioning](https://docs.upsonic.ai/concepts/skills/advanced/versioning.md): Track skill versions and filter by semantic version constraints
+- [BuiltinSkills](https://docs.upsonic.ai/concepts/skills/loaders/builtin.md): Use skills bundled with Upsonic — no setup required
+- [GitHubSkills](https://docs.upsonic.ai/concepts/skills/loaders/github.md): Load skills from GitHub repositories
+- [InlineSkills](https://docs.upsonic.ai/concepts/skills/loaders/inline.md): Define skills programmatically without filesystem directories
+- [LocalSkills](https://docs.upsonic.ai/concepts/skills/loaders/local.md): Load skills from local filesystem directories
+- [Skill Loaders](https://docs.upsonic.ai/concepts/skills/loaders/overview.md): Load skills from local files, GitHub, URLs, registries, and more
+- [URLSkills](https://docs.upsonic.ai/concepts/skills/loaders/url.md): Load skills from remote zip or tar archives
+- [Metrics & Monitoring](https://docs.upsonic.ai/concepts/skills/metrics.md): Track how agents use skills with built-in usage metrics
+- [Skills](https://docs.upsonic.ai/concepts/skills/overview.md): Add reusable domain expertise to your agents with structured instructions, scripts, and references
+- [SKILL.md Format](https://docs.upsonic.ai/concepts/skills/skill-format.md): Create custom skills with the SKILL.md file format
+- [Advanced Features](https://docs.upsonic.ai/concepts/stategraph/advanced/advanced-features.md): Master Send API, parallel execution, and task decorators
+- [Building AI Agents](https://docs.upsonic.ai/concepts/stategraph/advanced/building-agents.md): Create intelligent agents with tools and agentic workflows
+- [Human-in-the-Loop](https://docs.upsonic.ai/concepts/stategraph/advanced/human-in-loop.md): Build approval workflows with interrupts and human oversight
+- [Persistence & Time Travel](https://docs.upsonic.ai/concepts/stategraph/advanced/persistence.md): Master checkpointing, state history, and time travel
+- [Reliability & Resilience](https://docs.upsonic.ai/concepts/stategraph/advanced/reliability.md): Build fault-tolerant workflows with retry, caching, and durability
+- [Attributes](https://docs.upsonic.ai/concepts/stategraph/attributes.md): Configuration options for the StateGraph system
+- [Core Concepts](https://docs.upsonic.ai/concepts/stategraph/core-concepts.md): Master the building blocks of StateGraph
+- [StateGraph](https://docs.upsonic.ai/concepts/stategraph/overview.md): Build complex, stateful AI workflows with graph-based orchestration
+- [Quick Start](https://docs.upsonic.ai/concepts/stategraph/quickstart.md): Build your first StateGraph in 5 minutes
+- [Adding Tools](https://docs.upsonic.ai/concepts/tasks/adding-tools.md): Integrating tools and extending task capabilities in the Upsonic framework
+- [Attributes](https://docs.upsonic.ai/concepts/tasks/attributes.md): Configuration options for the Task
+- [Adding Documents to Task Context](https://docs.upsonic.ai/concepts/tasks/context-management/adding-document-context-to-task.md): Processing documents and text files in task context
+- [Adding Images to Task Context](https://docs.upsonic.ai/concepts/tasks/context-management/adding-images-to-task-context.md): Processing images and visual content in task context
+- [Adding Knowledge Base to Task Context](https://docs.upsonic.ai/concepts/tasks/context-management/adding-knowledge-base-to-task-context.md): Integrating knowledge bases for RAG capabilities in task context
+- [Adding Tasks to Other Tasks as Context](https://docs.upsonic.ai/concepts/tasks/context-management/adding-tasks-to-other-tasks-as-context.md): Using task outputs as context for other tasks in the Upsonic framework
+- [Basic Task Example](https://docs.upsonic.ai/concepts/tasks/creating-task.md): Step-by-step guide to creating tasks in the Upsonic framework
+- [Task Metrics](https://docs.upsonic.ai/concepts/tasks/metrics.md): Track tokens, cost, requests, tool calls, and timing for a single task execution.
+- [Tasks](https://docs.upsonic.ai/concepts/tasks/overview.md): Let's analyze how Upsonic Tasks works
+- [Response Format](https://docs.upsonic.ai/concepts/tasks/response-format.md): Configuring output formats for task responses in the Upsonic framework
+- [Task Result](https://docs.upsonic.ai/concepts/tasks/results.md): Accessing and managing task execution results and metadata
+- [Task Response Caching](https://docs.upsonic.ai/concepts/tasks/task-caching.md): Cache task responses to improve performance and reduce API costs
+- [Nested Teams](https://docs.upsonic.ai/concepts/team/advanced/nested-teams.md): Use Team instances as entities inside other Teams for hierarchical workflows
+- [Expose Team as MCP Server](https://docs.upsonic.ai/concepts/team/advanced/team-as-mcp.md): Turn any Team into an MCP server so other agents or MCP clients can use it as a tool
+- [Assigning Tasks Manually](https://docs.upsonic.ai/concepts/team/assigning-tasks-manually.md): Explicitly assign specific agents to tasks
+- [Attributes](https://docs.upsonic.ai/concepts/team/attributes.md): Configuration options for the Team class
+- [Choosing Right Team Mode](https://docs.upsonic.ai/concepts/team/choosing-right-team-mode.md): Learn how to select the appropriate team mode for your workflow
+- [Basic Team Example](https://docs.upsonic.ai/concepts/team/examples/basic-team-example.md): Complete example of a content creation workflow with multiple agents
+- [Team Metrics](https://docs.upsonic.ai/concepts/team/metrics.md): Track tokens, cost, requests, tool calls, and timing across every member of a team.
+- [Coordinate](https://docs.upsonic.ai/concepts/team/modes/coordinate.md): Strategic planning and delegation with a leader agent
+- [Route](https://docs.upsonic.ai/concepts/team/modes/route.md): Intelligent routing to the best specialist agent
+- [Sequential](https://docs.upsonic.ai/concepts/team/modes/sequential.md): Linear workflow where tasks flow from one agent to the next
+- [Team](https://docs.upsonic.ai/concepts/team/overview.md): Build teams of AI agents that work together
+- [Adding Tools](https://docs.upsonic.ai/concepts/tools/advanced/adding-tools.md): Add tools to agents and tasks at initialization or dynamically at runtime
+- [Agent as Tool](https://docs.upsonic.ai/concepts/tools/advanced/agent-as-tool.md): Use other agents as tools for hierarchical agent architectures
+- [Combining Multiple Tools](https://docs.upsonic.ai/concepts/tools/advanced/combining-multiple-tools.md): Combine different types of tools in a single task
+- [Removing Tools](https://docs.upsonic.ai/concepts/tools/advanced/removing-tools.md): Remove tools from agents and tasks by name, object reference, or both
+- [Best Practices](https://docs.upsonic.ai/concepts/tools/best-practices.md): Guidelines for creating effective and well-structured tools
+- [YFinanceTools](https://docs.upsonic.ai/concepts/tools/data-tools/yfinance.md): Comprehensive financial data toolkit using Yahoo Finance API
+- [External Execution](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/external-execution.md): Mark a tool for execution outside the framework
+- [Instructions](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/instructions.md): Inject custom instructions into the agent's system prompt for a tool
+- [Required Confirmation](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/required-confirmation.md): Require user confirmation before executing a tool
+- [Requires User Input](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/requires-user-input.md): Prompt the user for input during tool execution
+- [Show Result](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/show-result.md): Display tool output to the user instead of sending it back to the LLM
+- [Stop After Tool Call](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/stop-after-tool-call.md): Terminate the agent's run after this tool executes
+- [User Input Fields](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/behavior-control/user-input-fields.md): Specify which fields require user input
+- [Caching](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/performance/caching.md): Enable result caching to avoid redundant executions
+- [Sequential & Parallel Run](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/performance/sequential-parallel-run.md): Control whether a tool can be executed in parallel with others
+- [Timeout](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/performance/timeout.md): Set execution timeout for a tool
+- [Tool Hooks](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/performance/tool-hooks.md): Execute custom logic before and after tool execution
+- [Docstring Format](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/schema-validation/docstring-format.md): Specify the docstring format for parameter description extraction
+- [Strict](https://docs.upsonic.ai/concepts/tools/function-class-tools/advanced/schema-validation/strict.md): Enforce strict JSON schema validation on tool parameters
+- [Attributes](https://docs.upsonic.ai/concepts/tools/function-class-tools/attributes.md): Configuration options for custom tools
+- [Creating Class Tool](https://docs.upsonic.ai/concepts/tools/function-class-tools/creating-class-tool.md): Create tools from class instances with automatic method registration
+- [Creating Function Tool](https://docs.upsonic.ai/concepts/tools/function-class-tools/creating-function-tool.md): Create simple function-based tools
+- [Creating ToolKit](https://docs.upsonic.ai/concepts/tools/function-class-tools/creating-toolkit.md): Organize related tools in a class with filtering, async mode, and configuration
+- [Overview](https://docs.upsonic.ai/concepts/tools/function-class-tools/overview.md): Create powerful custom tools for your AI agents
+- [Authentication](https://docs.upsonic.ai/concepts/tools/mcp-tools/authentication.md): Configure authentication for MCP servers that require credentials
+- [GitHub MCP Agent](https://docs.upsonic.ai/concepts/tools/mcp-tools/examples/github-agent.md): Build an autonomous agent that analyzes GitHub repositories and generates reports using the GitHub MCP server
+- [Google Calendar MCP Agent](https://docs.upsonic.ai/concepts/tools/mcp-tools/examples/google-calendar-agent.md): Build an autonomous agent that analyzes your calendar and generates schedule reports
+- [Notion MCP Agent](https://docs.upsonic.ai/concepts/tools/mcp-tools/examples/notion-agent.md): Build an autonomous agent that syncs Notion databases into local reports and analysis files
+- [Stripe MCP Agent](https://docs.upsonic.ai/concepts/tools/mcp-tools/examples/stripe-agent.md): Build an autonomous agent that analyzes Stripe payment data and generates revenue reports
+- [Twitter (X) MCP Agent](https://docs.upsonic.ai/concepts/tools/mcp-tools/examples/twitter-agent.md): Build an autonomous agent that analyzes Twitter/X data and generates social media reports
+- [MCPHandler](https://docs.upsonic.ai/concepts/tools/mcp-tools/mcp-handler.md): Use MCPHandler class to connect to a single MCP server
+- [MultiMCPHandler](https://docs.upsonic.ai/concepts/tools/mcp-tools/multi-mcp-handler.md): Connect to multiple MCP servers simultaneously
+- [Overview](https://docs.upsonic.ai/concepts/tools/mcp-tools/overview.md): Integrate external tools using the Model Context Protocol
+- [CodeExecutionTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/code-execution-tool.md): A built-in tool that allows models to execute code in a sandboxed environment
+- [FileSearchTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/file-search-tool.md): A built-in tool that allows models to search through uploaded files using vector search
+- [ImageGenerationTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/image-generation-tool.md): A built-in tool that allows models to generate images
+- [MCPServerTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/mcp-server-tool.md): A built-in tool that allows models to use MCP (Model Context Protocol) servers
+- [Supported Providers](https://docs.upsonic.ai/concepts/tools/model-provider-tools/supported-providers.md): Model provider tools compatibility and configuration
+- [UrlContextTool (Deprecated)](https://docs.upsonic.ai/concepts/tools/model-provider-tools/url-context-tool.md): Allows models to access and read contents from URLs directly (deprecated, use WebFetchTool instead)
+- [WebFetchTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/web-fetch-tool.md): A built-in tool that allows models to access and read contents from URLs
+- [WebSearchTool](https://docs.upsonic.ai/concepts/tools/model-provider-tools/web-search-tool.md): A built-in tool that allows models to search the web for information
+- [WebSearchUserLocation](https://docs.upsonic.ai/concepts/tools/model-provider-tools/web-search-user-location.md): User location information for localizing web search results
+- [Tools](https://docs.upsonic.ai/concepts/tools/overview.md): Extend your AI agents with powerful tools
+- [DaytonaTools](https://docs.upsonic.ai/concepts/tools/sandbox-tools/daytona.md): Secure cloud sandbox for code execution, shell commands, file operations, and git via Daytona. Inherits ToolKit.
+- [E2BTools](https://docs.upsonic.ai/concepts/tools/sandbox-tools/e2b.md): Secure cloud sandbox for code execution, shell commands, and file operations via E2B. Inherits ToolKit.
+- [ApifyTools](https://docs.upsonic.ai/concepts/tools/scraping-tools/apify.md): Web scraping, data extraction, and web automation toolkit powered by Apify Actors. Extends ToolKit.
+- [ExaTools](https://docs.upsonic.ai/concepts/tools/scraping-tools/exa.md): Web search, content retrieval, similar page discovery, and Q&A with citations via Exa API. Inherits ToolKit.
+- [FirecrawlTools](https://docs.upsonic.ai/concepts/tools/scraping-tools/firecrawl.md): Web scraping, crawling, and extraction via Firecrawl API. Inherits ToolKit.
+- [BoCha Search](https://docs.upsonic.ai/concepts/tools/search-tools/bochasearch.md): Web search tool using the BoCha AI search API
+- [DuckDuckGo](https://docs.upsonic.ai/concepts/tools/search-tools/duckduckgo.md): Web search tool using DuckDuckGo's search engine
+- [Tavily](https://docs.upsonic.ai/concepts/tools/search-tools/tavily.md): Advanced web search using the Tavily API
+- [Tool Locations](https://docs.upsonic.ai/concepts/tools/tool-locations.md): Understand where tools live — agent-level vs task-level
+- [Annotation Queues](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/advanced/annotation-queues.md): Create review queues, add traces for human review, and track completion in Langfuse
+- [Datasets](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/advanced/datasets.md): Create Langfuse datasets, add items, and link traces via run items
+- [Score Configs](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/advanced/score-configs.md): Define validation rules for Langfuse scores — ranges, categories, and descriptions
+- [Scores](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/advanced/scores.md): Add numeric, boolean, or categorical scores to any Langfuse trace
+- [Update Trace](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/advanced/update-trace.md): Override Langfuse trace output or metadata after the agent run
+- [Overview](https://docs.upsonic.ai/concepts/tracing/integrations/langfuse/index.md): Send agent traces to Langfuse for LLM observability, cost tracking, and prompt analytics
+- [PromptLayer Advanced API](https://docs.upsonic.ai/concepts/tracing/integrations/promptlayer/advanced.md): Complete runnable examples for PromptLayer datasets, reports, evaluations, and prompt registry
+- [Overview](https://docs.upsonic.ai/concepts/tracing/integrations/promptlayer/index.md): Log agent runs and evaluations to PromptLayer for prompt management, versioning, and observability
+- [OpenTelemetry Tracing](https://docs.upsonic.ai/concepts/tracing/overview.md): Full observability for your AI agents — traces, spans, costs, and token usage
+- [Async Execution](https://docs.upsonic.ai/concepts/uel/advanced/async-execution.md): Use async/await with UEL chains for better performance
+- [Conditional Routing](https://docs.upsonic.ai/concepts/uel/advanced/conditional-routing.md): Route execution to different chains based on conditions
+- [Custom Chains](https://docs.upsonic.ai/concepts/uel/advanced/custom-chains.md): Create custom chain functions with the @chain decorator
+- [Model Memory Modes](https://docs.upsonic.ai/concepts/uel/advanced/memory-modes.md): Understanding and configuring memory modes for UEL Model chains
+- [Parallel Execution](https://docs.upsonic.ai/concepts/uel/advanced/parallel-execution.md): Execute multiple chains simultaneously with RunnableParallel
+- [RAG Patterns](https://docs.upsonic.ai/concepts/uel/advanced/rag-patterns.md): Build RAG systems with UEL chains
+- [Visualization](https://docs.upsonic.ai/concepts/uel/advanced/visualization.md): Visualize your chains to understand complex workflows
+- [Attributes](https://docs.upsonic.ai/concepts/uel/attributes.md): Configuration options for the UEL system
+- [UEL (Upsonic Expression Language)](https://docs.upsonic.ai/concepts/uel/overview.md): Build powerful AI chains with intuitive composition patterns
+- [Usage Registry](https://docs.upsonic.ai/concepts/usage-registry.md): One append-only registry of every model call — read uniformly through agent.usage, task.usage, chat.usage, team.usage, and output.usage.
+- [Deploy via Django](https://docs.upsonic.ai/deployment/django.md): Integrate Upsonic agents into Django with views, optional DB models and admin
+- [Deploy via FastAPI](https://docs.upsonic.ai/deployment/fastapi.md): Run Upsonic agents with FastAPI using async agent.do_async() and Docker
+- [Deployment Overview](https://docs.upsonic.ai/deployment/overview.md): Choose how to deploy your Upsonic agents — FastAPI vs Django
+- [DevOps Telegram Bot](https://docs.upsonic.ai/examples/autonomous-agents/devops-telegram-bot.md): An AutonomousAgent connected to Telegram that monitors servers, analyzes logs, creates backups, and runs shell commands, all from chat.
+- [Expense Tracker Bot](https://docs.upsonic.ai/examples/autonomous-agents/expense-tracker-bot.md): A Telegram bot that reads receipt photos with OCR and tracks expenses to CSV, powered by AutonomousAgent with workspace-driven behavior.
+- [Folder Organizer](https://docs.upsonic.ai/examples/autonomous-agents/folder-organizer.md): An autonomous agent that semantically reorganizes any messy folder into a clean, navigable structure — using only a one-line task and a skill file.
+- [Operations Analyst](https://docs.upsonic.ai/examples/autonomous-agents/operations-analyst.md): A two-task autonomous pipeline that analyzes shipment data, computes delivery KPIs, and generates matplotlib charts, all from workspace-defined behavior.
+- [AI Governance Lexicon Agent](https://docs.upsonic.ai/examples/business-sales/ai_lexicon.md): Use Upsonic's Agent to research and explain AI governance terms with structured educational content including detailed explanations and frequently asked questions
+- [Classify Emails](https://docs.upsonic.ai/examples/business-sales/classify-emails.md): Build a lightweight Upsonic LLM agent that classifies fintech operation emails into specific categories.
+- [Company Research & Sales Strategy Agent](https://docs.upsonic.ai/examples/business-sales/company_research_sales_strategy_agent.md): Use Upsonic's DeepAgent to conduct comprehensive company research, analyze industries, perform financial analysis, and develop tailored sales strategies
+- [Extract People](https://docs.upsonic.ai/examples/business-sales/extract-people.md): Build a simple Upsonic LLM agent that extracts person names from text using structured output.
+- [Find Agreement Links](https://docs.upsonic.ai/examples/business-sales/find-agreement-links.md): Build an Upsonic LLM agent that autonomously finds and verifies agreement or policy pages on company websites.
+- [Find Company Website](https://docs.upsonic.ai/examples/business-sales/find-company-website.md): Build Upsonic LLM agents that find and validate official company websites using the Serper API.
+- [Find Example Product](https://docs.upsonic.ai/examples/business-sales/find-example-product.md): Build Upsonic LLM agents that autonomously explore ecommerce websites and extract structured product data.
+- [Find Sales Categories](https://docs.upsonic.ai/examples/business-sales/find-sales-categories.md): Build an Upsonic LLM agent that finds company websites and extracts ecommerce sales categories.
+- [Landing Page Generation Agent](https://docs.upsonic.ai/examples/business-sales/landing_page_generation.md): Use Upsonic's DeepAgent to generate high-quality landing page images by coordinating content creation, design recommendations, and SEO optimization
+- [Loan Covenant Monitoring Agent](https://docs.upsonic.ai/examples/business-sales/loan_covenant_monitoring.md): Use Upsonic's Team in coordinate mode to extract covenant definitions from loan agreements, calculate financial ratios with custom tools, and assess compliance risk through coordinated specialist agents
+- [Sales Offer Generator Agent](https://docs.upsonic.ai/examples/business-sales/sales_offer_agent.md): Use Upsonic's DeepAgent to generate personalized sales offers using real-time internet search
+- [Git Changelog Writer](https://docs.upsonic.ai/examples/code-development/git-changelog-writer.md): Use Upsonic's Sequential Team with two agents to turn raw git log output into a ready-to-post Twitter/X update — Tech Lead summarizes commits, Growth Hacker writes the tweet. No glue code; context flows automatically.
+- [Groq Code Review & Best Practices Agent](https://docs.upsonic.ai/examples/code-development/groq-code-review-agent.md): Use Upsonic's Agent with Groq's ultra-fast LLM inference to perform comprehensive code reviews, detect security vulnerabilities, and suggest best practices
+- [Contract Analyzer](https://docs.upsonic.ai/examples/document-analysis/contract-analyzer.md): Build an AI-powered contract analysis agent with custom ToolKit and KnowledgeBase using Upsonic
+- [Document Analyzer](https://docs.upsonic.ai/examples/document-analysis/document-analyzer.md): Use the Upsonic framework to extract company names from Turkish Tax Certificates using computer vision and LLM reasoning.
+- [Apify Restaurant Scout](https://docs.upsonic.ai/examples/integration-examples/apify-restaurant-scout.md): Use Upsonic's Agent with ApifyTools to search Google Maps for restaurants and food spots using natural language queries, then save the results as Markdown.
+- [Firecrawl Shopping Scraper](https://docs.upsonic.ai/examples/integration-examples/firecrawl-agent.md): Use Upsonic's Agent with FirecrawlTools to scrape a shopping website and extract product names, prices, and descriptions in a structured, readable format.
+- [NVIDIA Agent](https://docs.upsonic.ai/examples/model-integrations/nvidia_agent.md): Use Upsonic's Agent framework with NVIDIA NIM models via NvidiaModel
+- [Ollama Agent](https://docs.upsonic.ai/examples/model-integrations/ollama_agent.md): Use Upsonic's Agent with local Ollama models like gpt-oss:20b
+- [Introduction](https://docs.upsonic.ai/examples/overview/introduction.md): Explore Upsonic's example gallery showcasing everything from single-agent tasks to sophisticated multi-agent workflows.
+- [Crypto Block Policy](https://docs.upsonic.ai/examples/safety-compliance/crypto-block.md): Use Upsonic's Safety Engine with CryptoBlockPolicy to block cryptocurrency-related content.
+- [Safety Engine with Safeguard LLM Models](https://docs.upsonic.ai/examples/safety-compliance/safety_engine_with_safeguard_llm_models.md): Use Upsonic's Safety Engine with PIIBlockPolicy_LLM, OpenAI's gpt-4o for responses, and gpt-oss-safeguard-20b for policy enforcement via OpenRouter
+- [Comparison](https://docs.upsonic.ai/further-readings/comparison.md): Agent Development Platform Benchmark
+- [Telemetry](https://docs.upsonic.ai/further-readings/telemetry.md): To help Upsonic development
+- [Examples](https://docs.upsonic.ai/get-started/examples.md): Explore real-world examples showcasing Upsonic Framework capabilities
+- [Guides](https://docs.upsonic.ai/get-started/guides.md): Step-by-step tutorials to master Upsonic Framework
+- [IDE Integration](https://docs.upsonic.ai/get-started/ide-integration.md): Add Upsonic documentation to your coding tools for AI-assisted development
+- [Installation](https://docs.upsonic.ai/get-started/installation.md): Get started with Upsonic - Install, configure, and build your first AI Agent
+- [What is Upsonic](https://docs.upsonic.ai/get-started/introduction.md): Python framework for building autonomous and traditional AI agents, with tools, memory, RAG, multi-agent teams, and production deployment.
+- [Quickstart](https://docs.upsonic.ai/get-started/quickstart.md): Let's jumpstart your AI agent development
+- [1.Create a Task](https://docs.upsonic.ai/guides/1-create-a-task.md)
+- [2.Create an Agent](https://docs.upsonic.ai/guides/2-create-an-agent.md)
+- [3.Add a Safety Engine](https://docs.upsonic.ai/guides/3-add-a-safety-engine.md)
+- [4.Add a Tool](https://docs.upsonic.ai/guides/4-add-a-tool.md)
+- [5.Add an MCP](https://docs.upsonic.ai/guides/5-add-an-mcp.md)
+- [6.Integrate a Memory](https://docs.upsonic.ai/guides/6-integrate-a-memory.md)
+- [7.Creating a Team of Agents](https://docs.upsonic.ai/guides/7-creating-a-team-of-agents.md)
+- [Integrations](https://docs.upsonic.ai/integrations/overview.md): Connect Upsonic with your favorite tools, models, databases, and platforms
+- [AGENTS.md](https://docs.upsonic.ai/ready-to-use-snippets/agents-md.md): A ready-to-use AGENTS.md template for configuring your agent's behavior
+- [BOOTSTRAP.md](https://docs.upsonic.ai/ready-to-use-snippets/bootstrap.md): A ready-to use BOOTSTRAP.md template for configuring your agent's workspace
+- [SKILL.md](https://docs.upsonic.ai/ready-to-use-snippets/skill.md): A ready-to-use SKILL.md template for creating custom skills
+- [SOUL.md](https://docs.upsonic.ai/ready-to-use-snippets/soul-md.md): A ready-to-use SOUL.md template for configuring your agent's personality
+- [USER.md](https://docs.upsonic.ai/ready-to-use-snippets/user-md.md): A ready-to-use USER.md template for configuring your agent's user profile
+- [Agent](https://docs.upsonic.ai/reference/agent/agent.md)
+- [Memory](https://docs.upsonic.ai/reference/memory/memory.md)
+- [Tasks](https://docs.upsonic.ai/reference/task/task.md)
+- [Team](https://docs.upsonic.ai/reference/team/team.md)
+- [UCP Agent Example](https://docs.upsonic.ai/ucp/example-agent.md): A shopping assistant powered by Upsonic AI Agent and UCP (Universal Commerce Protocol)
+- [Universal Commerce Protocol (UCP)](https://docs.upsonic.ai/ucp/index.md): The open protocol that lets AI agents browse, buy, and manage orders across any merchant — no custom integrations required
+
+## OpenAPI Specs
+
+- [openapi](https://docs.upsonic.ai/on-prem/openapi.json)

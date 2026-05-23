@@ -20,18 +20,11 @@ Upsonic ships machine-readable docs for agents and IDEs:
 | **Full doc dump (~2.2 MB)** | https://docs.upsonic.ai/llms-full.txt |
 | Human intro | https://docs.upsonic.ai/get-started/introduction |
 
-**Before guessing an API:** use the index to find the page, then grep the full dump or fetch the live URL.
+**Before guessing an API:** use the index to find the page, then grep the bundled full dump (or fetch live).
 
-1. **Sync locally** (once per machine or after releases):
+1. **Discover** — `rg "MCPHandler" references/cache/llms.txt` or open [references/cache/llms.txt](references/cache/llms.txt) (shipped with this skill).
 
-```bash
-# From this skill folder (or repo path after install):
-bash scripts/sync-upsonic-docs.sh
-```
-
-2. **Discover** — `rg "MCPHandler" references/cache/llms.txt` or open [references/cache/llms.txt](references/cache/llms.txt) after sync.
-
-3. **Deep dive** — grep full corpus:
+2. **Deep dive** — grep bundled corpus:
 
 ```bash
 rg -n "continue_run_async" references/cache/llms-full.txt | head
@@ -39,7 +32,9 @@ rg -n "continue_run_async" references/cache/llms-full.txt | head
 
 Each page in `llms-full.txt` is `# Title` + `Source: https://docs.upsonic.ai/...` + markdown body.
 
-Details: [references/llms-docs.md](references/llms-docs.md). Framework summary: [references/framework-overview.md](references/framework-overview.md).
+To refresh bundled docs: `bash scripts/sync-upsonic-docs.sh` (see [llms-docs.md](references/llms-docs.md)).
+
+Framework summary: [references/framework-overview.md](references/framework-overview.md).
 
 **Cursor:** add `https://docs.upsonic.ai/llms-full.txt` in IDE docs ([IDE integration](https://docs.upsonic.ai/get-started/ide-integration)).
 
